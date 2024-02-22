@@ -9,9 +9,9 @@
         <sys_id>92ff5a7428a402904d88e6abc1e846d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Process Routing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Process Routing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
         <sys_suggestion_reader_group_id display_value="User History Reader Group for Starter Workspace AI Search Configuration">16ff5a7473a40290ec4379fc4d5278d3</sys_suggestion_reader_group_id>
         <sys_suggestion_reader_id display_value="User Search Term Reader">4b1cb27053231010dda1ddeeff7b12b8</sys_suggestion_reader_id>
         <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_92ff5a7428a402904d88e6abc1e846d2</sys_update_name>

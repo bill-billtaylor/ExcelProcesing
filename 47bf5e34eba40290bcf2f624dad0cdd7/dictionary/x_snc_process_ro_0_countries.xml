@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2f72aaf8eba40290bcf2f624dad0cdaa" label="Countries" max_length="40" name="x_snc_process_ro_0_countries" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Country" max_length="40" name="country" type="string"/>
+    </element>
+</database>

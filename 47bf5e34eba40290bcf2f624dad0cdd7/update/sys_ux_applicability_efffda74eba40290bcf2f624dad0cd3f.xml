@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_snc_process_ro_0.Audience for app process-routing</api_name>
+        <description/>
+        <name>Audience for app process-routing</name>
+        <role_names/>
+        <roles>dfbf9e34eba40290bcf2f624dad0cd05,9bbf9e34eba40290bcf2f624dad0cd0a</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-21 20:33:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efffda74eba40290bcf2f624dad0cd3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app process-routing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Process Routing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Process Routing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name>sys_ux_applicability_efffda74eba40290bcf2f624dad0cd3f</sys_update_name>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-21 20:33:32</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

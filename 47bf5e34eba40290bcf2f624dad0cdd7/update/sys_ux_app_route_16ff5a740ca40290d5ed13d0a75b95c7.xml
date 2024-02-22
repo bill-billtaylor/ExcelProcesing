@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Process Routing App Config">deff5a7460a40290e9e7b45ff1b029d4</app_config>
+        <description/>
+        <extension_point/>
+        <fields>globalSearchViewConfigId</fields>
+        <icon/>
+        <name>Search</name>
+        <optional_parameters>searchTerm</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>search</route_type>
+        <screen_type display_value="Search">1eff5a7459a402902e90f2bce2c6fcc8</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-21 20:33:30</sys_created_on>
+        <sys_id>16ff5a740ca40290d5ed13d0a75b95c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search</sys_name>
+        <sys_package display_value="Process Routing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Process Routing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name>sys_ux_app_route_16ff5a740ca40290d5ed13d0a75b95c7</sys_update_name>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-21 20:33:30</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=16ff5a740ca40290d5ed13d0a75b95c7"/>
+</record_update>

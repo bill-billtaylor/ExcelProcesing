@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2089000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>inbound_email</internal_name>
+        <label_cache>[{"name":"295f117c-acad-477d-8259-47f5d6a9cf63.record","label":"1 - Create Record➛Create Excel Record","reference":"x_snc_process_ro_0_create_excel","reference_display":"Create Excel","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject"},{"name":"Inbound Email_1.inbound_email.body_text","label":"Trigger - Inbound Email➛Email Record➛Body text","reference":"","reference_display":"Body text","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body_text"}]</label_cache>
+        <master_snapshot>153b6309ebac8290bcf2f624dad0cdae</master_snapshot>
+        <name>Taylor Process Email</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e13ba309ebac8290bcf2f624dad0cd77</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:38:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7ba6f85ebac8290bcf2f624dad0cd44</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Taylor Process Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name>sys_hub_flow_b7ba6f85ebac8290bcf2f624dad0cd44</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-11 18:02:09</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_flow_email_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <email_conditions table="sys_email">subjectLIKETest<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="Test"/>
+        </email_conditions>
+        <event_name>email.read</event_name>
+        <name/>
+        <order/>
+        <stop_condition_evaluation>true</stop_condition_evaluation>
+        <sys_class_name>sys_flow_email_trigger</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e13ba309ebac8290bcf2f624dad0cd77</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <target_table/>
+    </sys_flow_email_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT IN8d3b6309ebac8290bcf2f624dad0cd2b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</flow>
+        <name>Inbound Email</name>
+        <remote_sys_id/>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>8d3b6309ebac8290bcf2f624dad0cd2b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d3b6309ebac8290bcf2f624dad0cd2b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8d3b6309ebac8290bcf2f624dad0cd2b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>093b6309ebac8290bcf2f624dad0cd2d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:09:47</sys_updated_on>
+        <value>subjectLIKETest</value>
+        <variable display_value="Email Conditions">18010347c7312300f4eba1425a9763f7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8d3b6309ebac8290bcf2f624dad0cd2b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>c93b6309ebac8290bcf2f624dad0cd2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <value/>
+        <variable display_value="Order">60b307c7c7312300f4eba1425a97637e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8d3b6309ebac8290bcf2f624dad0cd2b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>cd3b6309ebac8290bcf2f624dad0cd2c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:01:22</sys_updated_on>
+        <value/>
+        <variable display_value="Target table">b914874853132300eb7c0a1806dc34b5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT INffba6f85ebac8290bcf2f624dad0cd46"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b7ba6f85ebac8290bcf2f624dad0cd44</id>
+        <name>Inbound Email</name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:38:37</sys_created_on>
+        <sys_id>ffba6f85ebac8290bcf2f624dad0cd46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:38:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ffba6f85ebac8290bcf2f624dad0cd46"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT IN0d3b6309ebac8290bcf2f624dad0cd21,383b2309ebac8290bcf2f624dad0cdff,493b6309ebac8290bcf2f624dad0cd02,4d3b6309ebac8290bcf2f624dad0cd05,4d3b6309ebac8290bcf2f624dad0cd24,bc3b2309ebac8290bcf2f624dad0cdf4,f43b2309ebac8290bcf2f624dad0cdfc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>0d3b6309ebac8290bcf2f624dad0cd21</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0d3b6309ebac8290bcf2f624dad0cd21"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>383b2309ebac8290bcf2f624dad0cdff</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=383b2309ebac8290bcf2f624dad0cdff"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>493b6309ebac8290bcf2f624dad0cd02</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=493b6309ebac8290bcf2f624dad0cd02"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>4d3b6309ebac8290bcf2f624dad0cd05</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d3b6309ebac8290bcf2f624dad0cd05"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>4d3b6309ebac8290bcf2f624dad0cd24</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d3b6309ebac8290bcf2f624dad0cd24"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>bc3b2309ebac8290bcf2f624dad0cdf4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc3b2309ebac8290bcf2f624dad0cdf4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</model>
+        <model_id>b7ba6f85ebac8290bcf2f624dad0cd44</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>f43b2309ebac8290bcf2f624dad0cdfc</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f43b2309ebac8290bcf2f624dad0cdfc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT IN413b6309ebac8290bcf2f624dad0cd33,b85cab89ebac8290bcf2f624dad0cda0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:38</sys_created_on>
+        <sys_id>413b6309ebac8290bcf2f624dad0cd33</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:14:36</sys_updated_on>
+        <ui_id>295f117c-acad-477d-8259-47f5d6a9cf63</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=413b6309ebac8290bcf2f624dad0cd33"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>413b6309ebac8290bcf2f624dad0cd33</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:38</sys_created_on>
+        <sys_id>0d3b6309ebac8290bcf2f624dad0cd35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:26</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>413b6309ebac8290bcf2f624dad0cd33</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:38</sys_created_on>
+        <sys_id>cd3b6309ebac8290bcf2f624dad0cd35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:38</sys_updated_on>
+        <value>x_snc_process_ro_0_create_excel</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=413b6309ebac8290bcf2f624dad0cd33"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>413b6309ebac8290bcf2f624dad0cd33</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:38</sys_created_on>
+        <sys_id>813b6309ebac8290bcf2f624dad0cd35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>413b6309ebac8290bcf2f624dad0cd33</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:38</sys_created_on>
+        <sys_id>893b6309ebac8290bcf2f624dad0cd35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>description={{Inbound Email_1.inbound_email.subject}}^short_description={{Inbound Email_1.inbound_email.body_text}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=413b6309ebac8290bcf2f624dad0cd33"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=413b6309ebac8290bcf2f624dad0cd33"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:31</sys_created_on>
+        <sys_id>b85cab89ebac8290bcf2f624dad0cda0</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:14:36</sys_updated_on>
+        <ui_id>ff125b3a-6829-45dd-aa69-8edd71050078</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b85cab89ebac8290bcf2f624dad0cda0"/>
+    <sys_element_mapping action="delete_multiple" query="id=b85cab89ebac8290bcf2f624dad0cda0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email_record</field>
+        <id>b85cab89ebac8290bcf2f624dad0cda0</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:31</sys_created_on>
+        <sys_id>745cab89ebac8290bcf2f624dad0cda2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:01:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7b95a4c0a73133008299b39f087901b4</table>
+        <value>{{Inbound Email_1.inbound_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>b85cab89ebac8290bcf2f624dad0cda0</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:31</sys_created_on>
+        <sys_id>3c5cab89ebac8290bcf2f624dad0cda2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:45:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7b95a4c0a73133008299b39f087901b4</table>
+        <value>{{295f117c-acad-477d-8259-47f5d6a9cf63.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b85cab89ebac8290bcf2f624dad0cda0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b85cab89ebac8290bcf2f624dad0cda0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT IN813b6309ebac8290bcf2f624dad0cd27,8d3b6309ebac8290bcf2f624dad0cd04,8d3b6309ebac8290bcf2f624dad0cd20,b83b2309ebac8290bcf2f624dad0cdfe,c93b6309ebac8290bcf2f624dad0cd01,cd3b6309ebac8290bcf2f624dad0cd23,f03b2309ebac8290bcf2f624dad0cdfb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>813b6309ebac8290bcf2f624dad0cd27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>8d3b6309ebac8290bcf2f624dad0cd04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>8d3b6309ebac8290bcf2f624dad0cd20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>b83b2309ebac8290bcf2f624dad0cdfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>c93b6309ebac8290bcf2f624dad0cd01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>cd3b6309ebac8290bcf2f624dad0cd23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:37</sys_created_on>
+        <sys_id>f03b2309ebac8290bcf2f624dad0cdfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b7ba6f85ebac8290bcf2f624dad0cd44"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>inbound_email</internal_name>
+        <label_cache>[{"name":"295f117c-acad-477d-8259-47f5d6a9cf63.record","label":"1 - Create Record➛Create Excel Record","reference":"x_snc_process_ro_0_create_excel","reference_display":"Create Excel","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject"},{"name":"Inbound Email_1.inbound_email.body_text","label":"Trigger - Inbound Email➛Email Record➛Body text","reference":"","reference_display":"Body text","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body_text"}]</label_cache>
+        <master>true</master>
+        <name>Taylor Process Email</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Taylor Process Email">b7ba6f85ebac8290bcf2f624dad0cd44</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>153b6309ebac8290bcf2f624dad0cdae</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_variable_value action="delete_multiple" query="document_key=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=153b6309ebac8290bcf2f624dad0cdae^sys_idNOT INa53ba309ebac8290bcf2f624dad0cd38"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</flow>
+        <name>Inbound Email</name>
+        <remote_sys_id/>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>a53ba309ebac8290bcf2f624dad0cd38</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a53ba309ebac8290bcf2f624dad0cd38"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a53ba309ebac8290bcf2f624dad0cd38</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>693ba309ebac8290bcf2f624dad0cd39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:40</sys_updated_on>
+        <value/>
+        <variable display_value="Order">60b307c7c7312300f4eba1425a97637e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a53ba309ebac8290bcf2f624dad0cd38</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>a53ba309ebac8290bcf2f624dad0cd39</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:09:49</sys_updated_on>
+        <value>subjectLIKETest</value>
+        <variable display_value="Email Conditions">18010347c7312300f4eba1425a9763f7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a53ba309ebac8290bcf2f624dad0cd38</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>e13ba309ebac8290bcf2f624dad0cd39</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:01:25</sys_updated_on>
+        <value/>
+        <variable display_value="Target table">b914874853132300eb7c0a1806dc34b5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=153b6309ebac8290bcf2f624dad0cdae^sys_idNOT IN953b6309ebac8290bcf2f624dad0cdaf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>153b6309ebac8290bcf2f624dad0cdae</id>
+        <name>Inbound Email</name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>953b6309ebac8290bcf2f624dad0cdaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=953b6309ebac8290bcf2f624dad0cdaf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=153b6309ebac8290bcf2f624dad0cdae^sys_idNOT IN113b6309ebac8290bcf2f624dad0cdf7,6d3ba309ebac8290bcf2f624dad0cd06,6d3ba309ebac8290bcf2f624dad0cd0e,993b6309ebac8290bcf2f624dad0cdb0,ad3ba309ebac8290bcf2f624dad0cd16,d13b6309ebac8290bcf2f624dad0cdef,ed3b6309ebac8290bcf2f624dad0cdfe"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>113b6309ebac8290bcf2f624dad0cdf7</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=113b6309ebac8290bcf2f624dad0cdf7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>6d3ba309ebac8290bcf2f624dad0cd06</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d3ba309ebac8290bcf2f624dad0cd06"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>6d3ba309ebac8290bcf2f624dad0cd0e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d3ba309ebac8290bcf2f624dad0cd0e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>993b6309ebac8290bcf2f624dad0cdb0</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=993b6309ebac8290bcf2f624dad0cdb0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>ad3ba309ebac8290bcf2f624dad0cd16</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ad3ba309ebac8290bcf2f624dad0cd16"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>d13b6309ebac8290bcf2f624dad0cdef</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d13b6309ebac8290bcf2f624dad0cdef"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</model>
+        <model_id>153b6309ebac8290bcf2f624dad0cdae</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>ed3b6309ebac8290bcf2f624dad0cdfe</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ed3b6309ebac8290bcf2f624dad0cdfe"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=153b6309ebac8290bcf2f624dad0cdae^sys_idNOT INd15ceb89ebac8290bcf2f624dad0cdfd,e93ba309ebac8290bcf2f624dad0cd36"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:33</sys_created_on>
+        <sys_id>d15ceb89ebac8290bcf2f624dad0cdfd</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <ui_id>ff125b3a-6829-45dd-aa69-8edd71050078</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d15ceb89ebac8290bcf2f624dad0cdfd"/>
+    <sys_element_mapping action="delete_multiple" query="id=d15ceb89ebac8290bcf2f624dad0cdfd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email_record</field>
+        <id>d15ceb89ebac8290bcf2f624dad0cdfd</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:33</sys_created_on>
+        <sys_id>915ceb89ebac8290bcf2f624dad0cdfe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:01:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7b95a4c0a73133008299b39f087901b4</table>
+        <value>{{Inbound Email_1.inbound_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>d15ceb89ebac8290bcf2f624dad0cdfd</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:45:33</sys_created_on>
+        <sys_id>555ceb89ebac8290bcf2f624dad0cdfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:45:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7b95a4c0a73133008299b39f087901b4</table>
+        <value>{{295f117c-acad-477d-8259-47f5d6a9cf63.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d15ceb89ebac8290bcf2f624dad0cdfd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d15ceb89ebac8290bcf2f624dad0cdfd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Taylor Process Email">153b6309ebac8290bcf2f624dad0cdae</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>e93ba309ebac8290bcf2f624dad0cd36</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <ui_id>295f117c-acad-477d-8259-47f5d6a9cf63</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e93ba309ebac8290bcf2f624dad0cd36"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e93ba309ebac8290bcf2f624dad0cd36</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>a13ba309ebac8290bcf2f624dad0cd38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:40</sys_updated_on>
+        <value>x_snc_process_ro_0_create_excel</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e93ba309ebac8290bcf2f624dad0cd36</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>ed3ba309ebac8290bcf2f624dad0cd37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:28</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e93ba309ebac8290bcf2f624dad0cd36"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e93ba309ebac8290bcf2f624dad0cd36</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>a93ba309ebac8290bcf2f624dad0cd37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e93ba309ebac8290bcf2f624dad0cd36</id>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>6d3ba309ebac8290bcf2f624dad0cd37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>description={{Inbound Email_1.inbound_email.subject}}^short_description={{Inbound Email_1.inbound_email.body_text}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e93ba309ebac8290bcf2f624dad0cd36"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e93ba309ebac8290bcf2f624dad0cd36"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae^sys_idNOT IN193b6309ebac8290bcf2f624dad0cdf3,293ba309ebac8290bcf2f624dad0cd1b,653ba309ebac8290bcf2f624dad0cd03,653ba309ebac8290bcf2f624dad0cd0b,a53ba309ebac8290bcf2f624dad0cd13,d53b6309ebac8290bcf2f624dad0cdfb,d93b6309ebac8290bcf2f624dad0cdeb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>193b6309ebac8290bcf2f624dad0cdf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_id>293ba309ebac8290bcf2f624dad0cd1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>653ba309ebac8290bcf2f624dad0cd03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>653ba309ebac8290bcf2f624dad0cd0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>a53ba309ebac8290bcf2f624dad0cd13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>d53b6309ebac8290bcf2f624dad0cdfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:39</sys_created_on>
+        <sys_id>d93b6309ebac8290bcf2f624dad0cdeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 20:40:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_153b6309ebac8290bcf2f624dad0cdae"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b7ba6f85ebac8290bcf2f624dad0cd44</sys_id>
+        <latest_snapshot>153b6309ebac8290bcf2f624dad0cdae</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch5-12-01-2023_12-11-2023_2006.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b7ba6f85ebac8290bcf2f624dad0cd44^sys_idNOT INe93ba309ebac8290bcf2f624dad0cd77"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e93ba309ebac8290bcf2f624dad0cd77","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b7ba6f85ebac8290bcf2f624dad0cd44</plan_id>
+        <snapshot>f6f2bf49ebe4429002fff4c1cad0cd62</snapshot>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 20:40:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e93ba309ebac8290bcf2f624dad0cd77</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:13:29</sys_updated_on>
+        <trigger display_value="">e13ba309ebac8290bcf2f624dad0cd77</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b7ba6f85ebac8290bcf2f624dad0cd44"/>
+</record_update>

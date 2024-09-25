@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>taylor_new_inbound_email</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Taylor New Inbound Email</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 21:12:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67623709ebec8290bcf2f624dad0cda9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Taylor New Inbound Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name>sys_hub_flow_67623709ebec8290bcf2f624dad0cda9</sys_update_name>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:12:12</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_variable_value action="DELETE" query="document_key=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=67623709ebec8290bcf2f624dad0cda9^sys_idNOT INa7623709ebec8290bcf2f624dad0cde8"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>67623709ebec8290bcf2f624dad0cda9</id>
+        <name>Taylor New Inbound Email</name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 21:12:12</sys_created_on>
+        <sys_id>a7623709ebec8290bcf2f624dad0cde8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:12:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=a7623709ebec8290bcf2f624dad0cde8"/>
+    <sys_hub_flow_input action="DELETE" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_output action="DELETE" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_action_instance action="DELETE" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_variable action="DELETE" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=67623709ebec8290bcf2f624dad0cda9"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</application>
+        <file_path/>
+        <instance_id>a936e6f1db480a5c92f5684e139619b8</instance_id>
+        <instance_name>taylorxanadu</instance_name>
+        <name>sys_hub_flow_67623709ebec8290bcf2f624dad0cda9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>taylor_new_inbound_email</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Taylor New Inbound Email</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 21:12:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67623709ebec8290bcf2f624dad0cda9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Taylor New Inbound Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_update_name>sys_hub_flow_67623709ebec8290bcf2f624dad0cda9</sys_update_name>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:12:12</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=67623709ebec8290bcf2f624dad0cda9^sys_idNOT INa7623709ebec8290bcf2f624dad0cde8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>67623709ebec8290bcf2f624dad0cda9</id>
+        <name>Taylor New Inbound Email</name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-02-22 21:12:12</sys_created_on>
+        <sys_id>a7623709ebec8290bcf2f624dad0cde8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-02-22 21:12:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a7623709ebec8290bcf2f624dad0cde8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=67623709ebec8290bcf2f624dad0cda9"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=67623709ebec8290bcf2f624dad0cda9"/>
+</record_update>]]></payload>
+        <payload_hash>-1587372074</payload_hash>
+        <record_name>Taylor New Inbound Email</record_name>
+        <reverted_from/>
+        <source>37b3a7d02bbcde10f60ff829ce91bf0a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-09-18 18:39:44</sys_created_on>
+        <sys_id>dcd36fd02bbcde10f60ff829ce91bf77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192066ee8bb0000001</sys_recorded_at>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-09-18 18:39:44</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>9cd36fd071bcde1012c58b8eda684777</update_guid>
+        <update_guid_history>9cd36fd071bcde1012c58b8eda684777:-1587372074</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>btaylor</sys_created_by>
+        <sys_created_on>2024-09-25 14:24:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>633f772dc4a94c66b79b3f795a80b8d1</sys_id>
+        <sys_metadata>67623709ebec8290bcf2f624dad0cda9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Taylor New Inbound Email</sys_name>
+        <sys_package display_value="Excel Processing" source="x_snc_process_ro_0">47bf5e34eba40290bcf2f624dad0cdd7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Excel Processing">47bf5e34eba40290bcf2f624dad0cdd7</sys_scope>
+        <sys_scope_delete display_value="">1a5cfbbb65e848b082cea8b3d1da9c24</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_67623709ebec8290bcf2f624dad0cda9</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_67623709ebec8290bcf2f624dad0cda9">dcd36fd02bbcde10f60ff829ce91bf77</sys_update_version>
+        <sys_updated_by>btaylor</sys_updated_by>
+        <sys_updated_on>2024-09-25 14:24:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
